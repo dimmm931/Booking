@@ -1,9 +1,3 @@
-/*!
- * Start Bootstrap - Blog Post (https://startbootstrap.com/template-overviews/blog-post)
- * Copyright 2013-2017 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-blog-post/blob/master/LICENSE)
- */
-
 body {
   padding-top: 54px;
 }
@@ -14,41 +8,117 @@ body {
   }
 }
 
-
-
 /* small tables in left sidebar */
-.tableSmall{border:2px solid black; box-shadow: 10px 10px;}
-.tableSmall:hover{border:2px solid red; box-shadow: 10px 10px;cursor:pointer;}
+.tableSmall {
+	border: 2px solid black;
+	box-shadow: 10px 10px;
+	}
+.tableSmall:hover {
+	border: 2px solid red;
+	box-shadow: 10px 10px;
+	cursor:pointer;
+	}
 
-.centerMine{margin: 0 auto;}
+.centerMine {
+	margin: 0 auto;
+	}
 
 
-
-/* Padding for right tables on mobile-makes a margin at bottom*/
-@media screen and (max-width: 600px){  /*480*/
-.paddX{margin-bottom:20px;}
+/* MOBILE Padding for right tables on mobile-makes a margin at bottom------------------------*/
+@media screen and (max-width: 600px) {  /*480*/
+  .paddX {
+	  margin-bottom: 20px;
+      }
+  .tableBig { 
+      border: 0.1em solid green;
+      width: 95%;
+      margin: 0 auto;
+      } /*resizing main Table in Mobile*/
+  .tableSmall {
+	  width: 90%;
+	  margin: 0 auto;
+	  }
 }
-/* END Padding for right tables on mobile-makes a margin at bottom*/
+/* END Padding for right tables on mobile-makes a margin at bottom-------------------------*/
 
 
 /*Mega fix, adding blank div 300 px height only for destop, on mobile this div turns to 10px height*/
-#div_spacing{height:300px;}
+#div_spacing { 
+     height: 300px;
+}
+
+
 /* Space div if only no mobile*/
-@media screen and (max-width: 600px){  /*480*/
-#div_spacing{height:10px;}
+@media screen and (max-width: 600px) {  /*480*/
+    #div_spacing {
+		height: 10px;
+		}
+/*.tableBig{width:98%;}*/  /* attempt to make mobile view for ajaxresponse window smaller*/
 }
 /* Space div if only no mobile*/
 
 
-
-
-
 /* Main Table in left*/
-.tableBig{height:200px;border-radius:12px;}
-
+.tableBig {
+	height: 200px; 
+	border-radius: 12px;
+	}
 
 /*assigned by JS to clicked small table*/
-.selected{background-color:green;}
+.selected {
+	background-color: green;
+    }
 
 
+/*Class for taken and free dates*/
+.taken {
+	background-color: red;
+	border: solid red 2px;
+	color: white;
+	padding: 1px;
+	}
+.free {
+	background-color: green;
+	color: white;
+	padding: 3px;
+	}
 
+/*Link to book a date*/
+.bookLink {
+	font-size: 0.6em;
+	text-decoration: underline;
+	}
+
+	/* Add - refactor */
+.sign { 
+    background-color: green;
+}
+.sign2 {
+	color: white;
+	padding: 1em;
+	text-decoration: underline;
+	border: 2px solid grey; 
+	border-radius:15px;
+}
+	
+.taken2 {
+	 position: relative;
+	 border-radius:6px;
+}
+.deleteMe2 {
+	width: 5%;
+	margin-right: 0.9em;
+}
+.accorditionRadius {
+	border-radius: 3px;
+}
+.accordname {
+	display: none;
+	margin-top:
+	0.7em;
+}
+.selectTableJs {
+	background-color: green;
+	color: white; 
+	padding: 3em;
+}
